@@ -24,11 +24,11 @@ jobs:
 
       # Adjust the dotnet build command to use the Wordle/Wordle path
       - name: Build with dotnet
-        run: dotnet build Wordle/Wordle/Wordle.csproj --configuration Release
+        run: dotnet build Wordle --configuration Release
 
       # Adjust the dotnet publish command to use the Wordle/Wordle path
       - name: dotnet publish
-        run: dotnet publish Wordle/Wordle/Wordle.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        run: dotnet publish Wordle -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
       # You might also need to adjust the path in the upload-artifact step, depending on where the published files end up
       - name: Upload artifact for deployment job
