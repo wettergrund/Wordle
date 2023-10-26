@@ -10,7 +10,7 @@ The program handles all logic serverside and presents the data to the React-clie
 - MVC with React
 - Authorization with JWT
 - Entity Framework Core
-- Code First with SQL Server
+- Code First with SQL Server 
 
 ## The Code
 
